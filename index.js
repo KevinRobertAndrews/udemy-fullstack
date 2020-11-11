@@ -19,16 +19,12 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect(
-    keys.mongoURI,
-    {
+mongoose
+    .connect(keys.mongoURI, {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-    },
-    () => {
-        console.log("Connected to MongoDB...");
-    }
-);
+    })
+    .then(console.log("Connected to MongoDB..."));
 
 app.get("/", (req, res) => {
     res.send("Welcome to Emaily");
