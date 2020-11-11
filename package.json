@@ -1,24 +1,24 @@
 {
-  "name": "fullstack",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js"
-  },
-  "keywords": [],
-  "author": "Kevin Andrews <kevinrobertandrews@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "cookie-session": "^1.4.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.10.13",
-    "passport": "^0.4.1",
-    "passport-google-oauth20": "^2.0.0"
-  },
-  "engines": {
-    "node": "12.16.1",
-    "npm": "6.13.4"
-  }
+    "name": "fullstack",
+    "version": "0.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "start": "node index.js"
+    },
+    "keywords": [],
+    "author": "Kevin Andrews <kevinrobertandrews@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "cookie-session": "^1.4.0",
+        "express": "^4.17.1",
+        "mongoose": "^5.10.13",
+        "passport": "^0.4.1",
+        "passport-google-oauth20": "^2.0.0"
+    },
+    "engines": {
+        "node": "12.16.1",
+        "npm": "6.13.4"
+    }
 }
