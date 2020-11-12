@@ -4,13 +4,16 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "nodemon index.js",
-        "start": "node index.js"
+        "server": "nodemon index.js",
+        "start": "node index.js",
+        "client": "npm run start --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
     },
     "keywords": [],
     "author": "Kevin Andrews <kevinrobertandrews@gmail.com>",
     "license": "MIT",
     "dependencies": {
+        "concurrently": "^5.3.0",
         "cookie-session": "^1.4.0",
         "express": "^4.17.1",
         "mongoose": "^5.10.13",
